@@ -412,6 +412,23 @@ body {
             font-size: 20px;
             font-weight: 200;}
 
+/* Collections */
+.row {}
+
+    .collection--bedroom {
+        background-image: url("../img/c_img_1.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;}
+
+    .collection--livingroom {
+        background-image: url("../img/c_img_2.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;}
+
 /* Footer */
 footer {}
 
