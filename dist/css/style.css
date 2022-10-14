@@ -21,10 +21,11 @@ body {
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --almostblack: hsl(0, 0%, 9%);
-    --gray: hsl(210, 11%, 15%);}
+    --gray: hsl(210, 11%, 15%);
+    --lgray: hsl(0, 0%, 50%);}
 
 /*Classes */
-.r-6 {
+.hr-6 {
     background-color: var(--gray);
     width: 50px;}
 
@@ -52,7 +53,7 @@ body {
     opacity: 0;}
     
 .fadeInBottom {
-    animation: fadeInBottom 1.2s ease-in-out 0.2s forwards;}
+    animation: fadeInBottom 1s ease-in-out 0.1s forwards;}
 
 .overlay::before {
     content: '';
@@ -122,10 +123,14 @@ body {
         .navbar .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover::before {
             opacity: 1;}}
 
-     .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu
+     .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu {}
 
       .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
          font-size: 12px;}
+      .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.nav-more {
+         color: var(--lgray);}
+      .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu a:active {
+         background-color: var(--gray);}
 
 /* Cover */
 .cover {
@@ -217,6 +222,12 @@ body {
             font-size: 14px;
             word-wrap: break-word;
             margin-bottom: 40px;}
+            @media (min-width: 47rem) {
+                .bedroom .bedroom--content p {
+                    padding-right: 25rem;}}
+            @media (min-width: 57rem) {
+                .bedroom .bedroom--content p {
+                    padding-right: 25rem;}}
 
         .bedroom .bedroom--content hr{
             margin-left: 0;
@@ -238,6 +249,27 @@ body {
         @media (min-width: 57rem) {
             .bedroom .bedroom--content a {
                 width: auto;}}
+    
+    .bedroom .bedroom--pg {
+        padding-left: .375rem;
+        padding-right: .375rem;
+        text-align: center;}
+
+        .bedroom .bedroom--pg hr{
+            margin: auto;}
+
+            .bedroom .bedroom--pg h2{
+                margin-top: 20px;}
+            
+            .bedroom .bedroom--pg p {}
+                @media (min-width: 47rem) {
+                    .bedroom .bedroom--pg p {
+                        padding-left: 15rem;
+                        padding-right: 25rem;}}
+                @media (min-width: 57rem) {
+                    .bedroom .bedroom--pg p {
+                        padding-left: 15rem;
+                        padding-right: 15rem;}}
 
 /* Living room */
 .livingroom {
@@ -286,6 +318,12 @@ body {
             color: var(--white);
             word-wrap: break-word;
             margin-bottom: 40px;}
+            @media (min-width: 47rem) {
+                .livingroom--content p {
+                    padding-right: 25rem;}}
+            @media (min-width: 57rem) {
+                .livingroom--content p {
+                    padding-right: 25rem;}}
 
         .livingroom .livingroom--content a{
             color: var(--almostblack);
@@ -415,19 +453,172 @@ body {
 /* Collections */
 .row {}
 
-    .collection--bedroom {
-        background-image: url("../img/c_img_1.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        position: relative;}
+    .row .collection--bedroom {
+        padding: 0;
+        position: relative;
+        cursor: pointer;}
+    
+    .row .collection--bedroom:hover .collection--bedroom--overlay {
+        background-color: var(--white);
+        opacity: 1;}
 
-    .collection--livingroom {
-        background-image: url("../img/c_img_2.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        position: relative;}
+            .row .collection--bedroom img {
+                height: 60vh;
+                width: 100%;}
+            @media (min-width: 47rem) {
+                .row .collection--bedroom img {
+                    height: 100vh;}}
+            @media (min-width: 67rem) {
+                .row .collection--bedroom img {
+                    height: 100vh;}}
+
+            .row .collection--bedroom .collection--bedroom--overlay {
+                text-align: center;}
+            @media (min-width: 47rem) {
+                .row .collection--bedroom .collection--bedroom--overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out}
+                .row .collection--bedroom .collection--bedroom--overlay p {
+                    font-size: 48px;
+                    padding-top: 250px;}}
+            @media (min-width: 67rem) {
+                .row .collection--bedroom .collection--bedroom--overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out}
+                .row .collection--bedroom .collection--bedroom--overlay p {
+                    font-size: 48px;
+                    padding-top: 250px;}}
+
+    .row .collection--livingroom {
+        padding: 0;
+        position: relative;
+        cursor: pointer;}
+    
+    .row .collection--livingroom:hover .collection--livingroom--overlay {
+        color: var(--white);
+        background-color: var(--almostblack);
+        opacity: 1;}
+
+            .row .collection--livingroom img {
+                height: 60vh;
+                width: 100%;}
+            @media (min-width: 47rem) {
+                .row .collection--livingroom img {
+                    height: 100vh;}}
+            @media (min-width: 67rem) {
+                .row .collection--livingroom img {
+                    height: 100vh;}}
+
+            .row .collection--livingroom .collection--livingroom--overlay {
+                text-align: center;}
+            @media (min-width: 47rem) {
+                .row .collection--livingroom .collection--livingroom--overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out}
+                .row .collection--livingroom .collection--livingroom--overlay p {
+                    font-size: 48px;
+                    padding-top: 250px;}}
+            @media (min-width: 67rem) {
+                .row .collection--livingroom .collection--livingroom--overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out}
+                .row .collection--livingroom .collection--livingroom--overlay p {
+                    font-size: 48px;
+                    padding-top: 250px;}}
+
+/* Gallery **/
+.gallery {
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+	transition: .3s;}
+    @media (min-width: 47rem) {
+        .gallery {
+            display: flex;
+            gap: 2%;
+            padding-left: 220px;
+            padding-right: 220px;}}
+    @media (min-width: 67rem) {
+        .gallery {
+            display: flex;
+            gap: 2%;
+            padding-left: 220px;
+            padding-right: 220px;}}
+
+	.gallery:hover .gallery__image {
+        filter: grayscale(1);}
+
+	.gallery__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;}
+        @media (min-width: 47rem) {
+            .gallery__column {
+                width: 33%;}}
+        @media (min-width: 67rem) {
+            .gallery__column {
+                width: 33%;}}
+
+	.gallery__link {
+		margin: 2px;
+		overflow: hidden;}
+		
+		.gallery__link:hover .gallery__image {
+				filter: grayscale(0);}
+			
+			.gallery__link:hover .gallery__caption {
+				opacity: 1;}
+	
+	.gallery__thumb {
+		position: relative;}
+	
+	.gallery__image {
+		display: block;
+		width: 100%;
+		transition: .3s;}
+		
+		.gallery__image:hover {
+			transform: scale(1.1);}
+	
+	.gallery__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: white;
+		opacity: 1;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;}
+        @media (min-width: 47rem) {
+            .gallery__caption {
+                opacity: 0;}}
+        @media (min-width: 67rem) {
+            .gallery__caption {
+                opacity: 0;}}
 
 /* Footer */
 footer {}
