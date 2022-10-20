@@ -1,0 +1,105 @@
+/**
+* [Lightbox Stylesheet]
+* Date: 10/11/22
+* Author: Devbug
+*
+*/
+.lightbox {
+    display: none;
+}
+@media (min-width: 47rem) {
+    .lightbox {
+        background-color: var(--black);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;}
+    
+        .lightbox__wrap {
+            overflow-y: scroll;
+            padding-top: 140px;
+            padding-bottom: 60px;
+            padding-left: 330px;
+            padding-right: 330px;}
+    
+        .lightbox__image {
+            text-align: center;}
+    
+            .lightbox__image img{
+                height: 23.7rem;
+                width: 23.7rem;}
+        
+        .lightbox__prev, .lightbox__next {
+            font-size: 32px;
+            position: absolute;
+            top: 350px;}
+    
+            .lightbox__next {
+                right: 20px;}
+    
+            .lightbox__prev {
+                left: 20px;}
+        
+        .lightbox__close {
+            font-size: 28px;
+            position: absolute;
+            top: 100px;
+            right: 20px;}
+    
+        .lightbox__number {
+            font-size: 12px;
+            letter-spacing: 5px;
+            position: absolute;
+            top: 100px;
+            left: 10px;}}
+
+@media (min-width: 67rem) {
+    .lightbox {
+        background-color: var(--black);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;}
+    
+        .lightbox__wrap {
+            padding-top: 140px;
+            padding-bottom: 60px;
+            padding-left: 330px;
+            padding-right: 330px;}
+    
+        .lightbox__image {
+            text-align: center;}
+    
+            .lightbox__image img{
+                height: 27.7rem;
+                width: 23.7rem;}
+        
+        .lightbox__prev, .lightbox__next {
+            font-size: 32px;
+            position: absolute;
+            top: 350px;}
+    
+            .lightbox__next {
+                right: 20px;}
+    
+            .lightbox__prev {
+                left: 20px;}
+        
+        .lightbox__close {
+            font-size: 28px;
+            position: absolute;
+            top: 100px;
+            right: 20px;}
+    
+        .lightbox__number {
+            font-size: 12px;
+            letter-spacing: 5px;
+            position: absolute;
+            top: 100px;
+            left: 10px;}}

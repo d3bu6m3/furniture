@@ -4,6 +4,7 @@
 *  Date: 10/11/22
 *  Author: Devbug
 **/
+@import "lightbox.css";
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;}
@@ -126,9 +127,14 @@ body {
      .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu {}
 
       .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-         font-size: 12px;}
+        color: var(--lgray); 
+        font-size: 12px;}
+        .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+            color: var(--almostblack);}
       .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.nav-more {
          color: var(--lgray);}
+         .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.nav-more:hover {
+            color: var(--almostblack);}
       .navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu a:active {
          background-color: var(--gray);}
 
@@ -224,9 +230,11 @@ body {
             margin-bottom: 40px;}
             @media (min-width: 47rem) {
                 .bedroom .bedroom--content p {
+                    font-size: 16px;
                     padding-right: 25rem;}}
             @media (min-width: 57rem) {
                 .bedroom .bedroom--content p {
+                    font-size: 16px;
                     padding-right: 25rem;}}
 
         .bedroom .bedroom--content hr{
@@ -320,9 +328,11 @@ body {
             margin-bottom: 40px;}
             @media (min-width: 47rem) {
                 .livingroom--content p {
+                    font-size: 16px;
                     padding-right: 25rem;}}
             @media (min-width: 57rem) {
                 .livingroom--content p {
+                    font-size: 16px;
                     padding-right: 25rem;}}
 
         .livingroom .livingroom--content a{
@@ -340,6 +350,27 @@ body {
         @media (min-width: 57rem) {
             .livingroom .livingroom--content a {
                 width: auto;}}
+
+.livingroom .livingroom--pg {
+    padding-left: .375rem;
+    padding-right: .375rem;
+    text-align: center;}
+
+    .livingroom .livingroom--pg hr{
+        margin: auto;}
+
+        .livingroom .livingroom--pg h2{
+            margin-top: 20px;}
+        
+        .livingroom .livingroom--pg p {}
+            @media (min-width: 47rem) {
+                .livingroom .livingroom--pg p {
+                    padding-left: 15rem;
+                    padding-right: 25rem;}}
+            @media (min-width: 57rem) {
+                .livingroom .livingroom--pg p {
+                    padding-left: 15rem;
+                    padding-right: 15rem;}}
 
 /* Social */
 .social_media {}
